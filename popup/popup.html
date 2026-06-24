@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=360">
-  <title>PELURU LUHUT</title>
+  <title>PEON TEAM</title>
   <link rel="stylesheet" href="popup.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap"
@@ -25,8 +25,8 @@
               <path d="M8 15H16V17H8V15Z" fill="rgba(0,0,0,0.2)" />
             </svg>
           </div>
-          <div class="loading-text">PELURU LUHUT</div>
-          <div class="loading-subtitle">LOADING ARSENAL...</div>
+          <div class="loading-text">P Y E X</div>
+          <div class="loading-subtitle">Developed by Peon Team</div>
           <div class="loading-bar">
             <div class="loading-bar-fill"></div>
           </div>
@@ -45,11 +45,24 @@
               </svg>
             </div>
             <div class="header-title">
-              <h1>PELURU LUHUT</h1>
-              <span class="header-subtitle">TACTICAL VAULT v2.0</span>
+              <h1>PEON TEAM PROJECT</h1>
+              <span class="header-subtitle">Penetration Testing Web Toolkit</span>
             </div>
           </div>
           <div class="header-actions">
+            <button class="icon-btn" id="techBtn" title="Tech Detector">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg>
+            </button>
+            <button class="icon-btn" id="toolsBtn" title="Recon Tools">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </button>
             <button class="icon-btn" id="notesBtn" title="Catatan">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                 <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
@@ -295,8 +308,8 @@
 
           <div class="about-card">
             <div class="about-content">
-              <h3>PELURU LUHUT</h3>
-              <p>Tactical Payload Repository v2.0</p>
+              <h3>P Y E X</h3>
+              <p>PYEX v2.0</p>
               <div class="about-footer">
                 <a href="https://github.com/hyla001" class="github-link" target="_blank">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -404,6 +417,391 @@
         </div>
       </div>
 
+      <!-- TECH DETECT SCREEN -->
+      <div class="screen hidden" id="techScreen">
+        <header class="header">
+          <div class="header-left">
+            <button class="back-btn" id="backFromTech">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <div class="header-title">
+              <h1>TECH DETECTOR</h1>
+            </div>
+          </div>
+          <div class="header-actions">
+            <button class="icon-btn" id="refreshTechBtn" title="Refresh Scan">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 4v6h-6M1 20v-6h6M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15" />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <div class="scrollable-content tech-content">
+          <!-- Target URL -->
+          <div class="tech-target-box">
+            <div class="tech-target-label">TARGET</div>
+            <div class="tech-target-url" id="techCurrentUrl">https://example.com</div>
+          </div>
+
+          <!-- Stats Summary -->
+          <div class="tech-stats" id="techStats">
+            <div class="tech-stat-item">
+              <span class="tech-stat-number" id="techTotalCount">0</span>
+              <span class="tech-stat-label">Technologies</span>
+            </div>
+          </div>
+
+          <!-- Results Grid -->
+          <div id="techResults" class="tech-results-container">
+            <!-- Categories will be dynamically generated -->
+          </div>
+
+          <!-- Empty State -->
+          <div class="tech-empty-state hidden" id="techEmptyState">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="8" />
+              <path d="M21 21l-4.35-4.35" />
+            </svg>
+            <p class="tech-empty-title">No technologies detected</p>
+            <p class="tech-empty-desc">Navigate to a website and scan again</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RECON TOOLS SCREEN -->
+      <div class="screen hidden" id="toolsScreen">
+        <header class="header">
+          <div class="header-left">
+            <button class="back-btn" id="backFromTools">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <div class="header-title">
+              <h1>RECON TOOLS</h1>
+            </div>
+          </div>
+        </header>
+
+        <div class="scrollable-content tools-content">
+          <div class="tools-grid-full">
+            <button class="tool-card" id="openMutator">
+              <div class="tool-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4" />
+                </svg>
+              </div>
+              <div class="tool-info">
+                <strong>Payload Mutator</strong>
+                <small>Generate 60+ payload variants untuk WAF bypass</small>
+              </div>
+            </button>
+
+            <button class="tool-card" id="openEndpoint">
+              <div class="tool-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                </svg>
+              </div>
+              <div class="tool-info">
+                <strong>Endpoint Discoverer</strong>
+                <small>Extract hidden APIs dari JavaScript files</small>
+              </div>
+            </button>
+
+            <button class="tool-card" id="openSubdomain">
+              <div class="tool-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10" />
+                </svg>
+              </div>
+              <div class="tool-info">
+                <strong>Subdomain Finder</strong>
+                <small>Discover subdomains via crt.sh</small>
+              </div>
+            </button>
+
+            <button class="tool-card" id="openParameter">
+              <div class="tool-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 7V4h16v3" />
+                  <path d="M9 20h6" />
+                  <path d="M12 4v16" />
+                </svg>
+              </div>
+              <div class="tool-info">
+                <strong>Parameter Scanner</strong>
+                <small>Scan URL & form parameters</small>
+              </div>
+            </button>
+
+            <button class="tool-card" id="openSecurityAnalyzer">
+              <div class="tool-icon" style="color: #ef4444;">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+              </div>
+              <div class="tool-info">
+                <strong>Security Analyzer</strong>
+                <small>Headers, Cookies, Leaks, IDOR, Source Maps</small>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAYLOAD MUTATOR SCREEN -->
+      <div class="screen hidden" id="mutatorScreen">
+        <header class="header">
+          <div class="header-left">
+            <button class="back-btn" id="backFromMutator">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <div class="header-title">
+              <h1>PAYLOAD MUTATOR</h1>
+            </div>
+          </div>
+          <div class="header-actions">
+            <button class="icon-btn accent" id="clearMutatorBtn" title="Clear All">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <div class="scrollable-content mutator-content">
+          <!-- Input Section -->
+          <div class="mutator-input-section">
+            <label class="mutator-label">PAYLOAD INPUT</label>
+            <textarea id="mutatorInput" class="mutator-textarea" placeholder="<script>alert(1)</script>"></textarea>
+
+            <div class="mutator-options">
+              <label class="mutator-checkbox">
+                <input type="checkbox" id="mutXSS" checked> XSS Variants
+              </label>
+              <label class="mutator-checkbox">
+                <input type="checkbox" id="mutSQLi" checked> SQLi Variants
+              </label>
+              <label class="mutator-checkbox">
+                <input type="checkbox" id="mutEncoding" checked> Encoding
+              </label>
+              <label class="mutator-checkbox">
+                <input type="checkbox" id="mutCase"> Case Mutation
+              </label>
+            </div>
+
+            <button class="primary-btn full-width" id="mutateBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+              </svg>
+              MUTATE PAYLOAD
+            </button>
+          </div>
+
+          <!-- Output Section -->
+          <div class="mutator-output-section">
+            <div class="mutator-output-header">
+              <label class="mutator-label">MUTATIONS (<span id="mutationCount">0</span>)</label>
+              <button class="text-btn" id="copyAllMutations">Copy All</button>
+            </div>
+            <div class="mutator-output-list" id="mutatorOutput">
+              <div class="mutator-empty">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4" />
+                </svg>
+                <p>Masukkan payload dan klik MUTATE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ENDPOINT DISCOVERER SCREEN -->
+      <div class="screen hidden" id="endpointScreen">
+        <header class="header">
+          <div class="header-left">
+            <button class="back-btn" id="backFromEndpoint">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <div class="header-title">
+              <h1>ENDPOINT DISCOVERER</h1>
+            </div>
+          </div>
+          <div class="header-actions">
+            <button class="icon-btn accent" id="exportEndpointsBtn" title="Export Endpoints">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <div class="scrollable-content endpoint-content">
+          <!-- Scan Section -->
+          <div class="endpoint-input-section">
+            <label class="mutator-label">TARGET URL</label>
+            <div class="endpoint-url-box" id="endpointTargetUrl">Click SCAN to analyze current page</div>
+
+            <button class="primary-btn full-width" id="scanEndpointsBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.35-4.35" />
+              </svg>
+              SCAN ENDPOINTS
+            </button>
+          </div>
+
+          <!-- Stats -->
+          <div class="endpoint-stats hidden" id="endpointStats">
+            <div class="stat-item">
+              <span class="stat-value" id="statApiCount">0</span>
+              <span class="stat-label">APIs</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value" id="statPathCount">0</span>
+              <span class="stat-label">Paths</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value" id="statJsCount">0</span>
+              <span class="stat-label">JS Files</span>
+            </div>
+          </div>
+
+          <!-- Results -->
+          <div class="endpoint-results" id="endpointResults">
+            <div class="endpoint-empty">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+              </svg>
+              <p>Scan halaman untuk menemukan hidden endpoints</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUBDOMAIN FINDER SCREEN -->
+      <div class="screen hidden" id="subdomainScreen">
+        <header class="header">
+          <div class="header-left">
+            <button class="back-btn" id="backFromSubdomain">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <div class="header-title">
+              <h1>SUBDOMAIN FINDER</h1>
+            </div>
+          </div>
+        </header>
+
+        <div class="scrollable-content endpoint-content">
+          <div class="endpoint-input-section">
+            <label class="mutator-label">TARGET DOMAIN</label>
+            <input type="text" id="subdomainInput" class="subdomain-input" placeholder="example.com">
+
+            <button class="primary-btn full-width" id="findSubdomainsBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path
+                  d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg>
+              FIND SUBDOMAINS
+            </button>
+          </div>
+
+          <!-- Subdomain Results -->
+          <div class="endpoint-results" id="subdomainResults">
+            <div class="endpoint-empty">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M2 12h20" />
+              </svg>
+              <p>Masukkan domain untuk menemukan subdomains</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AUTO PARAMETER SCANNER SCREEN -->
+      <div class="screen hidden" id="parameterScreen">
+        <header class="header">
+          <div class="header-left">
+            <button class="back-btn" id="backFromParameter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <div class="header-title">
+              <h1>PARAMETER SCANNER</h1>
+            </div>
+          </div>
+          <div class="header-actions">
+            <button class="icon-btn accent" id="scanParamsBtn" title="Scan Parameters">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+            </button>
+            <button class="icon-btn" id="exportParamsBtn" title="Export to TXT">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+            </button>
+            <button class="icon-btn" id="sendParamsBtn" title="Send to Arsenal">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 2L11 13" />
+                <path d="M22 2l-7 20-4-9-9-4 20-7z" />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <div class="scrollable-content endpoint-content">
+          <!-- Stats -->
+          <div class="endpoint-stats" id="parameterStats">
+            <div class="stat-item">
+              <span class="stat-value" id="statQueryCount">0</span>
+              <span class="stat-label">SQLi</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value" id="statFormCount">0</span>
+              <span class="stat-label">XSS</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value" id="statHiddenCount">0</span>
+              <span class="stat-label">LFI</span>
+            </div>
+          </div>
+
+          <!-- Parameter List -->
+          <div class="endpoint-results" id="parameterList">
+            <div class="endpoint-empty">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 7V4h16v3" />
+                <path d="M9 20h6" />
+                <path d="M12 4v16" />
+              </svg>
+              <p>Klik tombol scan untuk menemukan parameter</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- CUSTOM CONFIRM MODAL -->
       <div class="confirm-overlay" id="confirmModal">
         <div class="confirm-box">
@@ -411,6 +809,109 @@
           <div class="confirm-actions">
             <button class="confirm-cancel" id="confirmCancel">Batal</button>
             <button class="confirm-ok" id="confirmOk">OK</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECURITY ANALYZER SCREEN -->
+      <div class="screen hidden" id="securityScreen">
+        <header class="header">
+          <div class="header-left">
+            <button class="back-btn" id="backFromSecurity">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <div class="header-title">
+              <h1>SECURITY ANALYZER</h1>
+            </div>
+          </div>
+          <div class="header-actions">
+            <button class="icon-btn accent" id="runSecurityScan" title="Full Security Scan">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </button>
+            <button class="icon-btn" id="exportSecurityReport" title="Export Report">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <div class="scrollable-content security-content">
+          <!-- Security Score -->
+          <div class="security-score-card" id="securityScoreCard">
+            <div class="score-circle" id="securityScoreCircle">
+              <span class="score-value" id="securityScoreValue">--</span>
+              <span class="score-label">Score</span>
+            </div>
+            <div class="score-details">
+              <div class="score-item"><span class="label">Headers</span><span class="value" id="scoreHeaders">-</span>
+              </div>
+              <div class="score-item"><span class="label">Cookies</span><span class="value" id="scoreCookies">-</span>
+              </div>
+              <div class="score-item"><span class="label">Leaks</span><span class="value" id="scoreLeaks">-</span></div>
+              <div class="score-item"><span class="label">Issues</span><span class="value" id="scoreIssues">-</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Security Headers -->
+          <div class="security-section">
+            <div class="section-header" onclick="toggleSecuritySection('headersSection')">
+              <span>Security Headers</span>
+              <span class="section-badge" id="headersBadge">0</span>
+            </div>
+            <div class="section-content hidden" id="headersSection"></div>
+          </div>
+
+          <!-- Cookies -->
+          <div class="security-section">
+            <div class="section-header" onclick="toggleSecuritySection('cookiesSection')">
+              <span>Cookie Security</span>
+              <span class="section-badge" id="cookiesBadge">0</span>
+            </div>
+            <div class="section-content hidden" id="cookiesSection"></div>
+          </div>
+
+          <!-- Sensitive Data Leaks -->
+          <div class="security-section">
+            <div class="section-header" onclick="toggleSecuritySection('leaksSection')">
+              <span>Sensitive Data Leaks</span>
+              <span class="section-badge danger" id="leaksBadge">0</span>
+            </div>
+            <div class="section-content hidden" id="leaksSection"></div>
+          </div>
+
+          <!-- Source Maps -->
+          <div class="security-section">
+            <div class="section-header" onclick="toggleSecuritySection('sourceMapsSection')">
+              <span>Source Maps Exposed</span>
+              <span class="section-badge" id="sourceMapsBadge">0</span>
+            </div>
+            <div class="section-content hidden" id="sourceMapsSection"></div>
+          </div>
+
+          <!-- Hidden Elements -->
+          <div class="security-section">
+            <div class="section-header" onclick="toggleSecuritySection('hiddenSection')">
+              <span>Hidden Elements</span>
+              <span class="section-badge" id="hiddenBadge">0</span>
+            </div>
+            <div class="section-content hidden" id="hiddenSection"></div>
+          </div>
+
+          <!-- IDOR -->
+          <div class="security-section">
+            <div class="section-header" onclick="toggleSecuritySection('idorSection')">
+              <span>IDOR Test URLs</span>
+              <span class="section-badge" id="idorBadge">0</span>
+            </div>
+            <div class="section-content hidden" id="idorSection"></div>
           </div>
         </div>
       </div>

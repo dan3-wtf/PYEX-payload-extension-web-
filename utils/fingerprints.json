@@ -1,0 +1,1577 @@
+{
+    "CMS": {
+        "WordPress": {
+            "html": [
+                "wp-content",
+                "wp-includes",
+                "wp-json",
+                "/wp-admin"
+            ],
+            "meta": {
+                "generator": "WordPress"
+            },
+            "script": [
+                "wp-embed\\.min\\.js",
+                "wp-emoji"
+            ]
+        },
+        "Joomla": {
+            "html": [
+                "Joomla!",
+                "com_content",
+                "/media/jui/",
+                "/components/com_"
+            ],
+            "meta": {
+                "generator": "Joomla"
+            }
+        },
+        "Drupal": {
+            "html": [
+                "Drupal\\.settings",
+                "sites/all/",
+                "drupal\\.js",
+                "/sites/default/files"
+            ],
+            "meta": {
+                "generator": "Drupal"
+            }
+        },
+        "Magento": {
+            "html": [
+                "/skin/frontend/",
+                "/js/mage/",
+                "Mage\\.Cookies",
+                "varien/js\\.js"
+            ],
+            "cookies": [
+                "frontend",
+                "adminhtml"
+            ]
+        },
+        "Shopify": {
+            "html": [
+                "Shopify\\.theme",
+                "cdn\\.shopify\\.com",
+                "myshopify\\.com"
+            ],
+            "script": [
+                "shopify"
+            ]
+        },
+        "Wix": {
+            "html": [
+                "wix-code-sdk",
+                "_wix_browser_",
+                "static\\.wixstatic\\.com"
+            ]
+        },
+        "Squarespace": {
+            "html": [
+                "squarespace\\.com",
+                "Static\\.SQUARESPACE"
+            ]
+        },
+        "Ghost": {
+            "html": [
+                "ghost-",
+                "content/themes/"
+            ],
+            "meta": {
+                "generator": "Ghost"
+            }
+        },
+        "Webflow": {
+            "html": [
+                "webflow\\.com",
+                "wf-"
+            ]
+        },
+        "Contentful": {
+            "html": [
+                "contentful"
+            ]
+        }
+    },
+    "Frameworks": {
+        "React": {
+            "html": [
+                "data-reactroot",
+                "data-reactid",
+                "_reactRootContainer",
+                "__REACT_DEVTOOLS"
+            ],
+            "script": [
+                "react\\.production",
+                "react\\.development",
+                "react-dom",
+                "react\\.min\\.js"
+            ]
+        },
+        "Next.js": {
+            "html": [
+                "_next/static",
+                "__NEXT_DATA__",
+                "next/dist",
+                "_next/image"
+            ]
+        },
+        "Vue.js": {
+            "html": [
+                "data-v-[a-f0-9]",
+                "__vue__",
+                "Vue\\.config",
+                "v-cloak"
+            ],
+            "script": [
+                "vue\\.min\\.js",
+                "vue\\.runtime",
+                "vue\\.global"
+            ]
+        },
+        "Nuxt.js": {
+            "html": [
+                "__NUXT__",
+                "_nuxt/",
+                "nuxt-link"
+            ]
+        },
+        "Angular": {
+            "html": [
+                "ng-version",
+                "ng-app",
+                "ng-controller",
+                "\\[ng",
+                "\\(ng"
+            ],
+            "script": [
+                "angular\\.min\\.js",
+                "zone\\.js",
+                "@angular"
+            ]
+        },
+        "Svelte": {
+            "html": [
+                "svelte-",
+                "__svelte",
+                "svelte-component"
+            ]
+        },
+        "Ember.js": {
+            "html": [
+                "ember-",
+                "data-ember"
+            ],
+            "script": [
+                "ember\\.min\\.js"
+            ]
+        },
+        "Backbone.js": {
+            "script": [
+                "backbone\\.min\\.js",
+                "backbone-"
+            ]
+        },
+        "Preact": {
+            "script": [
+                "preact\\.min\\.js",
+                "preact\\.module\\.js"
+            ]
+        },
+        "Alpine.js": {
+            "html": [
+                "x-data",
+                "x-bind",
+                "x-on:",
+                "@click\\."
+            ],
+            "script": [
+                "alpine"
+            ]
+        },
+        "Solid": {
+            "html": [
+                "solid-js"
+            ]
+        },
+        "Remix": {
+            "html": [
+                "__remix"
+            ]
+        },
+        "Gatsby": {
+            "html": [
+                "___gatsby",
+                "gatsby-"
+            ],
+            "script": [
+                "gatsby"
+            ]
+        },
+        "Astro": {
+            "html": [
+                "astro-",
+                "data-astro"
+            ]
+        },
+        "SvelteKit": {
+            "html": [
+                "__sveltekit"
+            ]
+        },
+        "Laravel": {
+            "cookies": [
+                "laravel_session",
+                "XSRF-TOKEN"
+            ],
+            "html": [
+                "csrf-token"
+            ]
+        },
+        "Django": {
+            "cookies": [
+                "csrftoken",
+                "sessionid"
+            ],
+            "html": [
+                "csrfmiddlewaretoken"
+            ]
+        },
+        "Ruby on Rails": {
+            "html": [
+                "csrf-param",
+                "csrf-token",
+                "data-turbo",
+                "turbolinks"
+            ],
+            "cookies": [
+                "_session_id"
+            ]
+        },
+        "Express.js": {
+            "cookies": [
+                "connect\\.sid"
+            ]
+        },
+        "ASP.NET": {
+            "html": [
+                "__VIEWSTATE",
+                "__EVENTVALIDATION",
+                "aspnetForm",
+                "asp\\.net"
+            ],
+            "cookies": [
+                "ASP\\.NET_SessionId",
+                "\\.AspNetCore\\."
+            ]
+        },
+        "Spring": {
+            "cookies": [
+                "JSESSIONID"
+            ]
+        },
+        "Flask": {
+            "cookies": [
+                "session"
+            ]
+        },
+        "FastAPI": {
+            "html": [
+                "fastapi"
+            ]
+        }
+    },
+    "JavaScript libraries": {
+        "jQuery": {
+            "script": [
+                "jquery[\\.-].*\\.js",
+                "jquery\\.min\\.js"
+            ]
+        },
+        "jQuery UI": {
+            "script": [
+                "jquery-ui",
+                "jquery\\.ui"
+            ]
+        },
+        "Lodash": {
+            "script": [
+                "lodash\\.min\\.js",
+                "lodash\\.js",
+                "lodash\\.core"
+            ]
+        },
+        "Underscore.js": {
+            "script": [
+                "underscore\\.min\\.js"
+            ]
+        },
+        "Moment.js": {
+            "script": [
+                "moment\\.min\\.js",
+                "moment-with-locales"
+            ]
+        },
+        "Day.js": {
+            "script": [
+                "dayjs\\.min\\.js"
+            ]
+        },
+        "date-fns": {
+            "script": [
+                "date-fns"
+            ]
+        },
+        "Axios": {
+            "script": [
+                "axios\\.min\\.js",
+                "axios\\.js"
+            ]
+        },
+        "D3.js": {
+            "script": [
+                "d3\\.min\\.js",
+                "d3\\.v[0-9]"
+            ]
+        },
+        "Three.js": {
+            "script": [
+                "three\\.min\\.js",
+                "three\\.module\\.js"
+            ]
+        },
+        "Chart.js": {
+            "script": [
+                "chart\\.min\\.js",
+                "chart\\.js",
+                "chart\\.umd"
+            ]
+        },
+        "Highcharts": {
+            "script": [
+                "highcharts\\.js",
+                "highcharts\\.min\\.js"
+            ]
+        },
+        "ApexCharts": {
+            "script": [
+                "apexcharts"
+            ]
+        },
+        "GSAP": {
+            "script": [
+                "gsap",
+                "TweenMax",
+                "TweenLite",
+                "ScrollTrigger"
+            ]
+        },
+        "anime.js": {
+            "script": [
+                "anime\\.min\\.js"
+            ]
+        },
+        "Lottie": {
+            "script": [
+                "lottie\\.min\\.js",
+                "lottie-web",
+                "lottie-player"
+            ],
+            "html": [
+                "lottie-player",
+                "dotlottie"
+            ]
+        },
+        "Popper.js": {
+            "script": [
+                "popper\\.min\\.js",
+                "@popperjs"
+            ]
+        },
+        "Tippy.js": {
+            "script": [
+                "tippy\\.min\\.js"
+            ]
+        },
+        "SweetAlert2": {
+            "script": [
+                "sweetalert2"
+            ]
+        },
+        "Toastr": {
+            "script": [
+                "toastr\\.min\\.js"
+            ]
+        },
+        "Socket.io": {
+            "script": [
+                "socket\\.io"
+            ]
+        },
+        "RxJS": {
+            "script": [
+                "rxjs",
+                "rx\\.min\\.js"
+            ]
+        },
+        "Hammer.js": {
+            "script": [
+                "hammer\\.min\\.js"
+            ]
+        },
+        "Swiper": {
+            "script": [
+                "swiper\\.min\\.js",
+                "swiper-bundle"
+            ],
+            "html": [
+                "swiper-container",
+                "swiper-slide"
+            ]
+        },
+        "Slick": {
+            "script": [
+                "slick\\.min\\.js"
+            ],
+            "html": [
+                "slick-slider",
+                "slick-slide"
+            ]
+        },
+        "Owl Carousel": {
+            "script": [
+                "owl\\.carousel"
+            ],
+            "html": [
+                "owl-carousel"
+            ]
+        },
+        "Lightbox": {
+            "script": [
+                "lightbox\\.min\\.js"
+            ],
+            "html": [
+                "lightbox"
+            ]
+        },
+        "Fancybox": {
+            "script": [
+                "fancybox"
+            ],
+            "html": [
+                "fancybox"
+            ]
+        },
+        "Masonry": {
+            "script": [
+                "masonry\\.pkgd"
+            ]
+        },
+        "Isotope": {
+            "script": [
+                "isotope\\.pkgd"
+            ]
+        },
+        "ScrollMagic": {
+            "script": [
+                "ScrollMagic"
+            ]
+        },
+        "FullPage.js": {
+            "script": [
+                "fullpage\\.min\\.js"
+            ],
+            "html": [
+                "fullpage-wrapper"
+            ]
+        },
+        "Particles.js": {
+            "script": [
+                "particles\\.min\\.js"
+            ],
+            "html": [
+                "particles-js"
+            ]
+        },
+        "Typed.js": {
+            "script": [
+                "typed\\.min\\.js"
+            ]
+        },
+        "CountUp.js": {
+            "script": [
+                "countUp"
+            ]
+        },
+        "Prism": {
+            "script": [
+                "prism\\.min\\.js"
+            ],
+            "html": [
+                "language-javascript",
+                "language-python",
+                "language-"
+            ]
+        },
+        "Highlight.js": {
+            "script": [
+                "highlight\\.min\\.js",
+                "hljs"
+            ],
+            "html": [
+                "hljs"
+            ]
+        },
+        "CodeMirror": {
+            "script": [
+                "codemirror"
+            ],
+            "html": [
+                "CodeMirror"
+            ]
+        },
+        "Monaco Editor": {
+            "script": [
+                "monaco-editor",
+                "monaco\\."
+            ],
+            "html": [
+                "monaco-editor"
+            ]
+        },
+        "Ace Editor": {
+            "script": [
+                "ace\\.js",
+                "ace-builds"
+            ]
+        },
+        "Quill": {
+            "script": [
+                "quill\\.min\\.js",
+                "quill\\.js"
+            ],
+            "html": [
+                "ql-editor",
+                "ql-toolbar"
+            ]
+        },
+        "TinyMCE": {
+            "script": [
+                "tinymce\\.min\\.js"
+            ],
+            "html": [
+                "tinymce"
+            ]
+        },
+        "CKEditor": {
+            "script": [
+                "ckeditor"
+            ],
+            "html": [
+                "cke_"
+            ]
+        },
+        "Draft.js": {
+            "script": [
+                "draft-js"
+            ]
+        },
+        "Slate": {
+            "script": [
+                "slate-react"
+            ]
+        },
+        "Immutable.js": {
+            "script": [
+                "immutable\\.min\\.js"
+            ]
+        },
+        "Redux": {
+            "script": [
+                "redux\\.min\\.js",
+                "redux\\.js"
+            ]
+        },
+        "MobX": {
+            "script": [
+                "mobx"
+            ]
+        },
+        "Zustand": {
+            "script": [
+                "zustand"
+            ]
+        },
+        "XRegExp": {
+            "script": [
+                "xregexp"
+            ]
+        },
+        "lit-html": {
+            "script": [
+                "lit-html",
+                "lit-element"
+            ]
+        },
+        "Google Closure Library": {
+            "script": [
+                "closure-library",
+                "goog\\."
+            ]
+        },
+        "Zone.js": {
+            "script": [
+                "zone\\.js",
+                "zone\\.min\\.js",
+                "zone-evergreen"
+            ]
+        },
+        "Polyfill.io": {
+            "script": [
+                "polyfill\\.io"
+            ]
+        },
+        "core-js": {
+            "script": [
+                "core-js"
+            ]
+        },
+        "RequireJS": {
+            "script": [
+                "require\\.js",
+                "requirejs"
+            ]
+        },
+        "SystemJS": {
+            "script": [
+                "system\\.js"
+            ]
+        },
+        "Webpack": {
+            "html": [
+                "webpackJsonp",
+                "__webpack"
+            ]
+        },
+        "Parcel": {
+            "html": [
+                "parcelRequire"
+            ]
+        },
+        "Vite": {
+            "html": [
+                "@vite",
+                "vite/client"
+            ]
+        },
+        "esbuild": {
+            "html": [
+                "esbuild"
+            ]
+        },
+        "Rollup": {
+            "html": [
+                "rollup"
+            ]
+        }
+    },
+    "UI frameworks": {
+        "Bootstrap": {
+            "html": [
+                "bootstrap\\.min\\.css",
+                "bootstrap\\.min\\.js",
+                "class=\"[^\"]*btn-primary"
+            ],
+            "script": [
+                "bootstrap"
+            ]
+        },
+        "Tailwind CSS": {
+            "html": [
+                "tailwindcss",
+                "class=\"[^\"]*(?:bg-|text-|flex |grid |p-[0-9]|m-[0-9]|w-[0-9]|h-[0-9])"
+            ]
+        },
+        "Material UI": {
+            "html": [
+                "MuiButton",
+                "MuiTypography",
+                "mui-"
+            ],
+            "script": [
+                "@mui",
+                "material-ui"
+            ]
+        },
+        "Ant Design": {
+            "html": [
+                "ant-",
+                "antd"
+            ],
+            "script": [
+                "antd"
+            ]
+        },
+        "Chakra UI": {
+            "html": [
+                "chakra-"
+            ],
+            "script": [
+                "@chakra-ui"
+            ]
+        },
+        "Semantic UI": {
+            "html": [
+                "semantic\\.min\\.css",
+                "ui button"
+            ],
+            "script": [
+                "semantic\\.min\\.js"
+            ]
+        },
+        "Bulma": {
+            "html": [
+                "bulma\\.min\\.css",
+                "class=\"[^\"]*is-primary"
+            ]
+        },
+        "Foundation": {
+            "html": [
+                "foundation\\.min\\.css"
+            ],
+            "script": [
+                "foundation\\.min\\.js"
+            ]
+        },
+        "UIkit": {
+            "html": [
+                "uk-",
+                "uikit\\.min"
+            ],
+            "script": [
+                "uikit"
+            ]
+        },
+        "Skeleton": {
+            "html": [
+                "skeleton\\.css"
+            ]
+        },
+        "Milligram": {
+            "html": [
+                "milligram\\.min\\.css"
+            ]
+        },
+        "Materialize": {
+            "html": [
+                "materialize\\.min\\.css"
+            ],
+            "script": [
+                "materialize\\.min\\.js"
+            ]
+        },
+        "Pure CSS": {
+            "html": [
+                "pure-min\\.css",
+                "pure\\.css"
+            ]
+        },
+        "Primer CSS": {
+            "html": [
+                "primer",
+                "@primer"
+            ]
+        },
+        "Tachyons": {
+            "html": [
+                "tachyons"
+            ]
+        },
+        "DaisyUI": {
+            "html": [
+                "daisyui"
+            ]
+        },
+        "Headless UI": {
+            "script": [
+                "@headlessui"
+            ]
+        },
+        "Radix UI": {
+            "script": [
+                "@radix-ui"
+            ]
+        },
+        "shadcn/ui": {
+            "html": [
+                "shadcn"
+            ]
+        }
+    },
+    "Font scripts": {
+        "Google Fonts": {
+            "html": [
+                "fonts\\.googleapis\\.com",
+                "fonts\\.gstatic\\.com"
+            ]
+        },
+        "Font Awesome": {
+            "html": [
+                "font-awesome",
+                "fontawesome",
+                "fa-[a-z]+-",
+                "fas fa-",
+                "far fa-",
+                "fab fa-"
+            ]
+        },
+        "Material Icons": {
+            "html": [
+                "material-icons",
+                "fonts\\.googleapis\\.com.*Material"
+            ]
+        },
+        "Ionicons": {
+            "html": [
+                "ionicons"
+            ]
+        },
+        "Feather Icons": {
+            "html": [
+                "feather-icons",
+                "feather\\.min\\.js"
+            ]
+        },
+        "Heroicons": {
+            "script": [
+                "heroicons"
+            ]
+        },
+        "Lucide": {
+            "script": [
+                "lucide"
+            ]
+        },
+        "Phosphor Icons": {
+            "script": [
+                "phosphor-icons"
+            ]
+        },
+        "Tabler Icons": {
+            "html": [
+                "tabler-icons"
+            ]
+        },
+        "Bootstrap Icons": {
+            "html": [
+                "bootstrap-icons"
+            ]
+        },
+        "Boxicons": {
+            "html": [
+                "boxicons"
+            ]
+        },
+        "Remix Icon": {
+            "html": [
+                "remixicon"
+            ]
+        },
+        "Simple Icons": {
+            "html": [
+                "simple-icons"
+            ]
+        }
+    },
+    "Analytics": {
+        "Google Analytics": {
+            "html": [
+                "google-analytics\\.com",
+                "gtag",
+                "GoogleAnalyticsObject",
+                "ga\\('create"
+            ],
+            "script": [
+                "analytics\\.js",
+                "gtag/js",
+                "ga\\.js"
+            ]
+        },
+        "Google Tag Manager": {
+            "html": [
+                "googletagmanager\\.com",
+                "GTM-"
+            ],
+            "script": [
+                "gtm\\.js"
+            ]
+        },
+        "Facebook Pixel": {
+            "html": [
+                "connect\\.facebook\\.net",
+                "fbq\\("
+            ],
+            "script": [
+                "fbevents\\.js"
+            ]
+        },
+        "Hotjar": {
+            "html": [
+                "hotjar\\.com",
+                "hjSiteSettings",
+                "_hjSettings"
+            ],
+            "script": [
+                "hotjar"
+            ]
+        },
+        "Mixpanel": {
+            "html": [
+                "mixpanel\\.com"
+            ],
+            "script": [
+                "mixpanel"
+            ]
+        },
+        "Segment": {
+            "html": [
+                "segment\\.com",
+                "analytics\\.load"
+            ],
+            "script": [
+                "analytics\\.min\\.js"
+            ]
+        },
+        "Amplitude": {
+            "html": [
+                "amplitude\\.com"
+            ],
+            "script": [
+                "amplitude"
+            ]
+        },
+        "Matomo": {
+            "html": [
+                "matomo",
+                "piwik"
+            ],
+            "script": [
+                "matomo\\.js",
+                "piwik\\.js"
+            ]
+        },
+        "Heap": {
+            "html": [
+                "heap-"
+            ],
+            "script": [
+                "heap"
+            ]
+        },
+        "FullStory": {
+            "html": [
+                "fullstory\\.com"
+            ],
+            "script": [
+                "fullstory"
+            ]
+        },
+        "Clarity": {
+            "html": [
+                "clarity\\.ms"
+            ],
+            "script": [
+                "clarity"
+            ]
+        },
+        "Plausible": {
+            "script": [
+                "plausible\\.io"
+            ]
+        },
+        "Fathom": {
+            "script": [
+                "fathom"
+            ]
+        },
+        "PostHog": {
+            "script": [
+                "posthog"
+            ]
+        },
+        "LogRocket": {
+            "script": [
+                "logrocket"
+            ]
+        },
+        "Smartlook": {
+            "script": [
+                "smartlook"
+            ]
+        },
+        "Lucky Orange": {
+            "script": [
+                "luckyorange"
+            ]
+        },
+        "Mouseflow": {
+            "script": [
+                "mouseflow"
+            ]
+        },
+        "Crazy Egg": {
+            "script": [
+                "crazyegg"
+            ]
+        },
+        "VWO": {
+            "script": [
+                "visualwebsiteoptimizer",
+                "vwo"
+            ]
+        },
+        "Optimizely": {
+            "script": [
+                "optimizely"
+            ]
+        },
+        "Google Optimize": {
+            "script": [
+                "optimize\\.google"
+            ]
+        },
+        "AB Tasty": {
+            "script": [
+                "abtasty"
+            ]
+        }
+    },
+    "Marketing": {
+        "HubSpot": {
+            "html": [
+                "hubspot",
+                "hs-scripts"
+            ],
+            "script": [
+                "hs-analytics",
+                "hubspot"
+            ]
+        },
+        "Salesforce": {
+            "html": [
+                "salesforce",
+                "pardot"
+            ],
+            "script": [
+                "salesforce"
+            ]
+        },
+        "Marketo": {
+            "script": [
+                "marketo",
+                "munchkin"
+            ]
+        },
+        "Mailchimp": {
+            "html": [
+                "mailchimp",
+                "mc-"
+            ],
+            "script": [
+                "mailchimp"
+            ]
+        },
+        "Intercom": {
+            "html": [
+                "intercom"
+            ],
+            "script": [
+                "intercom"
+            ]
+        },
+        "Drift": {
+            "script": [
+                "drift\\.com",
+                "driftt"
+            ]
+        },
+        "Zendesk": {
+            "html": [
+                "zendesk"
+            ],
+            "script": [
+                "zdassets\\.com"
+            ]
+        },
+        "Crisp": {
+            "script": [
+                "crisp\\.chat"
+            ]
+        },
+        "Tawk.to": {
+            "script": [
+                "tawk\\.to"
+            ]
+        },
+        "LiveChat": {
+            "script": [
+                "livechatinc"
+            ]
+        },
+        "Freshdesk": {
+            "script": [
+                "freshdesk"
+            ]
+        },
+        "Olark": {
+            "script": [
+                "olark"
+            ]
+        }
+    },
+    "Security": {
+        "Cloudflare": {
+            "html": [
+                "cf-browser-verification",
+                "cf-ray",
+                "__cf_bm",
+                "cloudflare"
+            ],
+            "cookies": [
+                "__cfduid",
+                "__cf_bm"
+            ]
+        },
+        "reCAPTCHA": {
+            "html": [
+                "google\\.com/recaptcha",
+                "g-recaptcha",
+                "grecaptcha"
+            ],
+            "script": [
+                "recaptcha"
+            ]
+        },
+        "hCaptcha": {
+            "html": [
+                "hcaptcha\\.com",
+                "h-captcha"
+            ],
+            "script": [
+                "hcaptcha"
+            ]
+        },
+        "Turnstile": {
+            "html": [
+                "challenges\\.cloudflare\\.com/turnstile"
+            ]
+        },
+        "Sucuri": {
+            "html": [
+                "sucuri\\.net"
+            ],
+            "cookies": [
+                "sucuri"
+            ]
+        },
+        "Imperva": {
+            "html": [
+                "imperva\\.com",
+                "incapsula"
+            ],
+            "cookies": [
+                "incap_ses",
+                "visid_incap"
+            ]
+        },
+        "Akamai": {
+            "cookies": [
+                "ak_bmsc",
+                "bm_sz"
+            ],
+            "html": [
+                "akamai"
+            ]
+        },
+        "Wordfence": {
+            "html": [
+                "wordfence",
+                "wf-"
+            ]
+        },
+        "ModSecurity": {
+            "html": [
+                "mod_security",
+                "NOYB"
+            ]
+        },
+        "AWS WAF": {
+            "html": [
+                "awswaf"
+            ]
+        },
+        "Fastly": {
+            "html": [
+                "fastly"
+            ]
+        },
+        "PerimeterX": {
+            "html": [
+                "px-captcha"
+            ]
+        },
+        "DataDome": {
+            "html": [
+                "datadome"
+            ]
+        },
+        "Shape Security": {
+            "html": [
+                "shape\\.com"
+            ]
+        }
+    },
+    "Server": {
+        "Nginx": {
+            "html": [
+                "nginx"
+            ]
+        },
+        "Apache": {
+            "html": [
+                "apache",
+                "mod_"
+            ]
+        },
+        "IIS": {
+            "html": [
+                "IIS",
+                "asp\\.net"
+            ]
+        },
+        "LiteSpeed": {
+            "html": [
+                "LiteSpeed"
+            ]
+        },
+        "OpenResty": {
+            "html": [
+                "openresty"
+            ]
+        },
+        "Caddy": {
+            "html": [
+                "caddy"
+            ]
+        },
+        "Tomcat": {
+            "html": [
+                "tomcat"
+            ]
+        },
+        "Jetty": {
+            "html": [
+                "jetty"
+            ]
+        }
+    },
+    "PaaS": {
+        "AWS": {
+            "html": [
+                "amazonaws\\.com",
+                "aws-",
+                "cloudfront\\.net"
+            ]
+        },
+        "Vercel": {
+            "html": [
+                "vercel\\.app",
+                "vercel\\.com",
+                "_vercel"
+            ]
+        },
+        "Netlify": {
+            "html": [
+                "netlify\\.app",
+                "netlify\\.com"
+            ]
+        },
+        "Heroku": {
+            "html": [
+                "herokuapp\\.com"
+            ]
+        },
+        "Firebase": {
+            "html": [
+                "firebaseapp\\.com",
+                "firebase\\.google\\.com",
+                "firebasestorage"
+            ],
+            "script": [
+                "firebase"
+            ]
+        },
+        "Google Cloud": {
+            "html": [
+                "googleapis\\.com",
+                "googleusercontent\\.com"
+            ]
+        },
+        "Azure": {
+            "html": [
+                "azure\\.com",
+                "azurewebsites\\.net",
+                "azurestaticapps"
+            ]
+        },
+        "DigitalOcean": {
+            "html": [
+                "digitaloceanspaces\\.com"
+            ]
+        },
+        "Render": {
+            "html": [
+                "onrender\\.com"
+            ]
+        },
+        "Railway": {
+            "html": [
+                "railway\\.app"
+            ]
+        },
+        "Fly.io": {
+            "html": [
+                "fly\\.io",
+                "fly\\.dev"
+            ]
+        },
+        "Cloudflare Pages": {
+            "html": [
+                "pages\\.dev"
+            ]
+        },
+        "Supabase": {
+            "html": [
+                "supabase\\.co",
+                "supabase\\.com"
+            ],
+            "script": [
+                "supabase"
+            ]
+        }
+    },
+    "Ecommerce": {
+        "Stripe": {
+            "html": [
+                "stripe\\.com",
+                "js\\.stripe"
+            ],
+            "script": [
+                "stripe\\.js"
+            ]
+        },
+        "PayPal": {
+            "html": [
+                "paypal\\.com",
+                "paypalobjects\\.com"
+            ],
+            "script": [
+                "paypal"
+            ]
+        },
+        "Square": {
+            "html": [
+                "squareup\\.com"
+            ],
+            "script": [
+                "square"
+            ]
+        },
+        "Braintree": {
+            "script": [
+                "braintree"
+            ]
+        },
+        "Razorpay": {
+            "script": [
+                "razorpay"
+            ]
+        },
+        "WooCommerce": {
+            "html": [
+                "woocommerce",
+                "wc-"
+            ]
+        }
+    },
+    "Miscellaneous": {
+        "Open Graph": {
+            "html": [
+                "og:title",
+                "og:description",
+                "og:image",
+                "property=\"og:"
+            ]
+        },
+        "Twitter Cards": {
+            "html": [
+                "twitter:card",
+                "twitter:title",
+                "twitter:image"
+            ]
+        },
+        "Schema.org": {
+            "html": [
+                "schema\\.org",
+                "application/ld\\+json"
+            ]
+        },
+        "AMP": {
+            "html": [
+                "amp-",
+                "cdn\\.ampproject\\.org"
+            ]
+        },
+        "PWA": {
+            "html": [
+                "manifest\\.json",
+                "service-worker",
+                "serviceWorker"
+            ]
+        },
+        "WebSocket": {
+            "html": [
+                "WebSocket",
+                "wss://"
+            ]
+        },
+        "GraphQL": {
+            "html": [
+                "graphql",
+                "/graphql"
+            ]
+        },
+        "gRPC": {
+            "html": [
+                "grpc"
+            ]
+        },
+        "HTTP/2": {
+            "html": [
+                "h2"
+            ]
+        },
+        "HTTP/3": {
+            "html": [
+                "h3"
+            ]
+        },
+        "WebGL": {
+            "html": [
+                "webgl"
+            ]
+        },
+        "WebRTC": {
+            "html": [
+                "webrtc",
+                "RTCPeerConnection"
+            ]
+        },
+        "Web Components": {
+            "html": [
+                "customElements",
+                "shadowRoot"
+            ]
+        },
+        "KaTeX": {
+            "script": [
+                "katex"
+            ],
+            "html": [
+                "katex"
+            ]
+        },
+        "MathJax": {
+            "script": [
+                "mathjax"
+            ],
+            "html": [
+                "mathjax"
+            ]
+        },
+        "TypeScript": {
+            "html": [
+                "\\.ts\"",
+                "typescript"
+            ]
+        },
+        "LottieFiles": {
+            "script": [
+                "lottiefiles",
+                "dotlottie"
+            ],
+            "html": [
+                "lottie-player",
+                "dotlottie-player"
+            ]
+        }
+    },
+    "Programming languages": {
+        "PHP": {
+            "html": [
+                "\\.php",
+                "PHPSESSID"
+            ],
+            "cookies": [
+                "PHPSESSID"
+            ]
+        },
+        "Python": {
+            "html": [
+                "python",
+                "wsgi"
+            ]
+        },
+        "Ruby": {
+            "html": [
+                "ruby",
+                "\\.rb"
+            ]
+        },
+        "Java": {
+            "html": [
+                "java",
+                "\\.jsp",
+                "jsessionid"
+            ],
+            "cookies": [
+                "JSESSIONID"
+            ]
+        },
+        "Node.js": {
+            "cookies": [
+                "connect\\.sid"
+            ]
+        },
+        "Go": {
+            "html": [
+                "golang"
+            ]
+        },
+        "Rust": {
+            "html": [
+                "rust",
+                "wasm"
+            ]
+        },
+        ".NET": {
+            "html": [
+                "\\.aspx",
+                "__VIEWSTATE"
+            ],
+            "cookies": [
+                "ASP\\.NET_SessionId"
+            ]
+        }
+    }
+}

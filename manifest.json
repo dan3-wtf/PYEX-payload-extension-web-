@@ -1,9 +1,9 @@
 {
     "manifest_version": 3,
-    "name": "LUHUT BINSHAR",
-    "version": "1.0.0",
+    "name": "PYEX PAYLOAD EXTENSION",
+    "version": "2.0.0",
     "description": "Security Testing Payload Manager - Store, search, and copy payloads for penetration testing",
-    "author": "LUHUT BINSHAR",
+    "author": "Peon Team",
     "action": {
         "default_popup": "popup/popup.html",
         "default_icon": {
@@ -20,13 +20,20 @@
     "permissions": [
         "storage",
         "clipboardWrite",
-        "alarms"
+        "alarms",
+        "tabs",
+        "activeTab",
+        "scripting",
+        "unlimitedStorage",
+        "webRequest"
     ],
     "host_permissions": [
-        "https://raw.githubusercontent.com/*"
+        "https://raw.githubusercontent.com/*",
+        "<all_urls>"
     ],
     "background": {
-        "service_worker": "background/updater.js"
+        "service_worker": "background/updater.js",
+        "scripts": ["service-worker.js"]
     },
     "commands": {
         "_execute_action": {
@@ -34,13 +41,15 @@
                 "default": "Ctrl+Shift+L",
                 "mac": "Command+Shift+L"
             },
-            "description": "Buka PELURU LUHUT"
+            "description": "Buka PYEX"
         }
     },
     "web_accessible_resources": [
         {
             "resources": [
-                "payloads/*.json"
+                "payloads/*.json",
+                "utils/*.json",
+                "content/*.js"
             ],
             "matches": [
                 "<all_urls>"
