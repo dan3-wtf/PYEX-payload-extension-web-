@@ -1,206 +1,126 @@
-# 🛡️ LUHUT BINSHAR - Payload Extension
+# PYEX Payload Extension
 
-> **Payload management extension untuk security testing.** Kumpulan payload siap pakai untuk pentester & bug hunter.
+Payload management extension for security testing, penetration testing, and web application assessment.
 
----
+Developed by Peon Team.
 
-## 📦 Cara Install Extension
+## Features
 
-### 🌐 Google Chrome / Chromium / Brave / Edge
+* Fast payload search
+* One-click copy to clipboard
+* Custom payload management
+* Favorites support
+* Payload synchronization
+* Local storage support
+* Dark and light themes
+* Responsive popup sizes
+* Cache-first performance
 
-<details>
-<summary><b>📖 Klik untuk lihat langkah-langkah (dengan gambar)</b></summary>
+## Installation
 
-#### Langkah 1: Download Extension
+### Chromium Browsers
+
+Supported browsers:
+
+* Google Chrome
+* Microsoft Edge
+* Brave
+* Chromium
+
+Steps:
+
+1. Download or clone this repository:
+
 ```bash
-git clone https://github.com/hyla001/payload-extension.git
-```
-Atau [**download ZIP dari GitHub**](https://github.com/hyla001/payload-extension/archive/refs/heads/main.zip) dan extract.
-
-> 💡 **Note:** Kamu hanya perlu download repo ini saja! Payload akan otomatis di-sync dari [luhut-binshar](https://github.com/hyla001/luhut-binshar) repository.
-
-#### Langkah 2: Buka Halaman Extensions
-- Ketik di address bar: `chrome://extensions`
-- Atau klik **Menu (⋮)** → **More Tools** → **Extensions**
-
-#### Langkah 3: Aktifkan Developer Mode
-- Cari toggle **"Developer mode"** di pojok kanan atas
-- **Aktifkan** toggle tersebut (geser ke kanan)
-
-#### Langkah 4: Load Extension
-- Klik tombol **"Load unpacked"** yang muncul
-- Pilih folder `payload-extension` yang sudah di-download
-- Klik **Select Folder**
-
-#### Langkah 5: Selesai! ✅
-- Extension akan muncul di toolbar browser
-- Klik icon extension untuk mulai menggunakan
-
-</details>
-
----
-
-### 🦊 Mozilla Firefox
-
-<details>
-<summary><b>📖 Klik untuk lihat langkah-langkah</b></summary>
-
-#### Langkah 1: Download Extension
-```bash
-git clone https://github.com/hyla001/payload-extension.git
-```
-Atau [**download ZIP dari GitHub**](https://github.com/hyla001/payload-extension/archive/refs/heads/main.zip) dan extract.
-
-> 💡 **Note:** Kamu hanya perlu download repo ini saja! Payload akan otomatis di-sync dari [luhut-binshar](https://github.com/hyla001/luhut-binshar) repository.
-
-#### Langkah 2: Buka Halaman Debugging
-- Ketik di address bar: `about:debugging#/runtime/this-firefox`
-
-#### Langkah 3: Load Extension
-- Klik tombol **"Load Temporary Add-on..."**
-- Navigate ke folder `payload-extension`
-- Pilih file **`manifest.json`**
-- Klik **Open**
-
-#### Langkah 4: Selesai! ✅
-- Extension akan muncul di toolbar
-- ⚠️ **Catatan:** Extension temporary akan hilang saat Firefox ditutup
-
-</details>
-
----
-
-## ⚡ Quick Start (TL;DR)
-
-| Browser | Langkah Cepat |
-|---------|---------------|
-| **Chrome** | `chrome://extensions` → Enable Developer Mode → Load unpacked → Pilih folder |
-| **Firefox** | `about:debugging` → Load Temporary Add-on → Pilih `manifest.json` |
-
----
-
-## 🔄 How It Works
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                     ARCHITECTURE                                 │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                  │
-│   📦 payload-extension          📂 luhut-binshar                │
-│   (Download this!)              (Auto-synced)                   │
-│   ─────────────────             ──────────────                  │
-│   • Browser extension           • Payload database (JSON)       │
-│   • User interface              • XSS, SQLi, SSRF, etc.        │
-│   • Settings & favorites        • Updated regularly            │
-│                                                                  │
-│              ┌──────────────────────────────────┐               │
-│   Extension ──│  Sync via GitHub Raw URL       │── Payloads    │
-│              └──────────────────────────────────┘               │
-│                                                                  │
-└─────────────────────────────────────────────────────────────────┘
+git clone https://github.com/dan3-wtf/PYEX-payload-extension-web-.git
 ```
 
-### 💡 Apa yang Perlu Kamu Download?
+2. Open:
 
-| Repo | Perlu Download? | Keterangan |
-|------|-----------------|------------|
-| **payload-extension** | ✅ **YA** | Install ini di browser kamu |
-| **luhut-binshar** | ❌ **TIDAK** | Auto-sync dari extension |
+```
+chrome://extensions
+```
 
-### 🔄 Update Flow
+3. Enable **Developer Mode**.
 
-1. **Developer** update payload di `luhut-binshar`
-2. **Developer** push ke GitHub
-3. **User** klik **Sync** di extension
-4. **User** dapat payload terbaru! ✨
+4. Click **Load unpacked**.
 
-> 💡 **Note:** Kamu tidak perlu download ulang extension untuk mendapatkan payload baru. Cukup klik Sync!
+5. Select the project folder.
+
+6. The extension is ready to use.
 
 ---
 
-## 🎯 Fitur Utama
+### Firefox
 
-| Fitur | Deskripsi |
-|-------|-----------|
-| 🔍 **Smart Search** | Cari payload dengan algoritma scoring relevance |
-| 📋 **One-Click Copy** | Klik sekali untuk copy payload ke clipboard |
-| ⭐ **Favorites** | Simpan payload yang sering dipakai |
-| ➕ **Custom Payloads** | Tambahkan payload buatan sendiri |
-| 🗑️ **Hide Payloads** | Sembunyikan payload yang tidak dibutuhkan |
-| 🔄 **Auto-Sync** | Update otomatis dari GitHub repository |
-| 🎨 **Theme Toggle** | Dark & Light mode |
-| 📐 **Resize Popup** | Small, Medium, Large size options |
-| ⚡ **Cache-First** | Instant load, background sync |
+For development and testing:
 
----
+1. Open:
 
-## 📚 Payload Categories
+```
+about:debugging#/runtime/this-firefox
+```
 
-| Category | Jumlah | Kegunaan |
-|----------|--------|----------|
-| 💉 **XSS** | 25+ | Cross-Site Scripting |
-| 🗄️ **SQLi** | 25+ | SQL Injection |
-| 🌐 **SSRF** | 15+ | Server-Side Request Forgery |
-| 📁 **LFI** | 13+ | Local File Inclusion |
-| 📡 **RFI** | 8+ | Remote File Inclusion |
-| 💻 **CMDi** | 16+ | Command Injection |
-| 🔧 **SSTI** | 13+ | Server-Side Template Injection |
-| ↪️ **Open Redirect** | 10+ | Open Redirect |
-| 🔐 **CSRF** | 9+ | Cross-Site Request Forgery |
-| 🔓 **2FA Bypass** | 20+ | Two-Factor Authentication Bypass |
-| 🛡️ **WAF Bypass** | 25+ | Web Application Firewall Bypass |
+2. Click **Load Temporary Add-on**.
 
----
+3. Select `manifest.json`.
 
-## 🔧 Troubleshooting
+Note: Temporary add-ons are removed when Firefox is restarted.
 
-<details>
-<summary><b>❌ Extension tidak muncul di toolbar?</b></summary>
+## Usage
 
-1. Klik icon **puzzle** (Extensions) di toolbar
-2. Cari "LUHUT BINSHAR"
-3. Klik icon **pin** untuk pin ke toolbar
+1. Open the extension popup.
+2. Search for a payload by keyword or category.
+3. Copy payloads with a single click.
+4. Save frequently used payloads to Favorites.
+5. Synchronize payload collections when updates are available.
 
-</details>
+## Categories
 
-<details>
-<summary><b>❌ Error saat load extension?</b></summary>
+Current payload collections include:
 
-1. Pastikan folder yang dipilih berisi file `manifest.json`
-2. Cek apakah Developer Mode sudah aktif
-3. Coba restart browser dan ulangi langkah-langkah
+* Cross-Site Scripting (XSS)
+* SQL Injection (SQLi)
+* Server-Side Request Forgery (SSRF)
+* Local File Inclusion (LFI)
+* Remote File Inclusion (RFI)
+* Command Injection
+* Server-Side Template Injection (SSTI)
+* Open Redirect
+* CSRF
+* WAF Bypass
 
-</details>
+Additional categories may be added in future releases.
 
-<details>
-<summary><b>❌ Payload tidak muncul?</b></summary>
+## Permissions
 
-1. Cek koneksi internet
-2. Klik tombol refresh/sync di extension
-3. Pastikan GitHub repository accessible
+The extension may request permissions required for:
 
-</details>
+* Local storage
+* Clipboard operations
+* Active tab interaction
+* Browser tab access
+* Payload synchronization
 
----
+Permissions are only used for extension functionality.
 
-## 📄 License
+## License
 
-This project is licensed under the **GPL-3.0 License** - see the [LICENSE](LICENSE) file for details.
+GPL-3.0 License
 
----
+See the LICENSE file for details.
 
-## ⚠️ Disclaimer
+## Disclaimer
 
-> **For authorized security testing only.**
-> 
-> Extension ini dibuat untuk keperluan security testing yang sah. Penggunaan untuk aktivitas ilegal sepenuhnya menjadi tanggung jawab pengguna. Selalu dapatkan izin tertulis sebelum melakukan penetration testing.
+This project is intended for authorized security testing, research, and educational purposes only.
 
----
+Users are responsible for ensuring they have proper authorization before performing any security assessment activities.
 
-## 🤝 Contributing
+The authors assume no responsibility for misuse of this software.
 
-Pull requests are welcome! Untuk perubahan major, silakan buka issue dulu untuk diskusi.
+## Author
 
-## 📞 Contact
+Peon Team
 
-- GitHub: [@hyla001](https://github.com/hyla001)
+GitHub:
+https://github.com/dan3-wtf

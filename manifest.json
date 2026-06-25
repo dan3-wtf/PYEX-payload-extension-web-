@@ -33,7 +33,7 @@
     ],
     "background": {
         "service_worker": "background/updater.js",
-        "scripts": ["service-worker.js"]
+        "scripts": ["background/updater.js"]
     },
     "commands": {
         "_execute_action": {
@@ -55,5 +55,15 @@
                 "<all_urls>"
             ]
         }
-    ]
+    ],
+    
+
+"browser_specific_settings": {
+  "gecko": {
+    "id": "pyex@dan3-wtf.com",
+    "data_collection_permissions": {
+      "required": ["none"]
+    }
+  }
+}
 }
